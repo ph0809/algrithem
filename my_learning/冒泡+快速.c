@@ -29,13 +29,13 @@ def quick_sort(list, start, end):
 		while low < high and a[high] < mid:
 			high -= 1
 		//跳出循环后，high下标对应的数就是比mid小的数
-                a[i] = a[j]
+        a[i] = a[j]
 
 		//low从左向右找到第一个大于mid的数，如果low的数比mid大，右移low
 		while low < high and a[low] > mid:
 			low += 1
 		//跳出循环后，low下标对应的数就是比mid大的数
-                a[j] = a[i]
+        a[j] = a[i]
 
 	//当high和low相遇了，则将该位置的数与mid交换
 	result = a[high]
